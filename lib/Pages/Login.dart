@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
               keyboardType: TextInputType.text,
               obscureText: true,
               decoration: InputDecoration(
-                
+                hintText: "Enter Your Password : ",
               ),
             ),
           ],
