@@ -13,6 +13,10 @@ class Login extends StatelessWidget {
           children: [
             TextField(
               keyboardType: TextInputType.text,
+              obscureText: true,
+              decoration: InputDecoration(
+                
+              ),
             ),
           ],
         ),
