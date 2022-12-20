@@ -16,6 +16,9 @@ class Login extends StatelessWidget {
               obscureText: true,
               decoration: InputDecoration(
                 hintText: "Enter Your Password : ",
+                // To delete borders
+                enabledBorder: OutlineInputBorder(borderSide: Divider.createBorderSide(context),),
+                focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey,),),
               ),
             ),
           ],
