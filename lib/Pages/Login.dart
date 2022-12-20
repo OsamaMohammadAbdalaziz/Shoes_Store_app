@@ -1,12 +1,7 @@
-
-
-
-
-
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
-  const Login({Key?key}) :super (key: key);
+  const Login({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +9,7 @@ class Login extends StatelessWidget {
       body: Column(
         children: [
           Text("data"),
-
-      ],
+        ],
       ),
     );
   }
