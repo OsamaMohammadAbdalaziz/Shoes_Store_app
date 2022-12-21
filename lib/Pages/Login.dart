@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Shared/Colors.dart';
 import 'package:shoes_store_app/Shared/Constant.dart';
 
 class Login extends StatelessWidget {
@@ -42,7 +43,7 @@ class Login extends StatelessWidget {
                   style: TextStyle(fontSize: 19),
                 ),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                  backgroundColor: MaterialStateProperty.all(BTNblue),
                   padding: MaterialStateProperty.all(EdgeInsets.all(12)),
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8))),
