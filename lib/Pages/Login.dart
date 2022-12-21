@@ -34,6 +34,19 @@ class Login extends StatelessWidget {
                   hintText: "Enter Your Password : ",
                 ),
               ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "click here",
+                  style: TextStyle(fontSize: 19),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.orange),
+                  padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8))),
+                ),
+              ),
             ],
           ),
         ),
