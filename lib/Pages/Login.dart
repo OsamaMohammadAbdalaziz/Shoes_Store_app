@@ -25,7 +25,7 @@ class Login extends StatelessWidget {
                   hintText: "Enter Your Email : ",
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 33,
               ),
               TextField(
@@ -35,11 +35,13 @@ class Login extends StatelessWidget {
                   hintText: "Enter Your Password : ",
                 ),
               ),
-              SizedBox(height: 33,),
+              const SizedBox(
+                height: 33,
+              ),
               ElevatedButton(
                 onPressed: () {},
                 child: Text(
-                  "click here",
+                  "Sign in",
                   style: TextStyle(fontSize: 19),
                 ),
                 style: ButtonStyle(
@@ -48,6 +50,9 @@ class Login extends StatelessWidget {
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8))),
                 ),
+              ),
+              const SizedBox(
+                height: 33,
               ),
             ],
           ),
