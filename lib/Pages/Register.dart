@@ -39,6 +39,12 @@ class Register extends StatelessWidget {
                 const SizedBox(
                   height: 33,
                 ),
+                TextField(
+                  keyboardType: TextInputType.text,
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    hintText: "Enter Your Password : ",
+                  )),
               ],
             )),
           ),
