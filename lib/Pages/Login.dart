@@ -56,7 +56,10 @@ class Login extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [],
+                children: [
+                  Text("Do not have account ?",
+                  style: TextStyle(fontSize: 18)),
+                ],
               ),
             ],
           ),
