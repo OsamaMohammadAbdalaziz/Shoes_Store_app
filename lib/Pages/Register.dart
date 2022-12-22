@@ -1,6 +1,3 @@
-
-
-
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
@@ -16,6 +13,12 @@ class Register extends StatelessWidget {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(33.0),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [],
+              )
+              ),
           ),
         ),
       ),
