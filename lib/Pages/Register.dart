@@ -14,11 +14,14 @@ class Register extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(33.0),
             child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [],
-              )
-              ),
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const SizedBox(
+                  height: 64,
+                ),
+              ],
+            )),
           ),
         ),
       ),
