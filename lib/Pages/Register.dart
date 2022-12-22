@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Shared/Constant.dart';
 
 class Register extends StatelessWidget {
   const Register({super.key});
@@ -20,6 +21,12 @@ class Register extends StatelessWidget {
                 const SizedBox(
                   height: 64,
                 ),
+                TextField(
+                    keyboardType: TextInputType.text,
+                    obscureText: false,
+                    decoration: decorationTextfield.copyWith(
+                      hintText: "Enter Your Username : ",
+                    )),
               ],
             )),
           ),
