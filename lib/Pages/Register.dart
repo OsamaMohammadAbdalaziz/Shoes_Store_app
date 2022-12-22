@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Shared/Colors.dart';
 import 'package:shoes_store_app/Shared/Constant.dart';
 
 class Register extends StatelessWidget {
@@ -49,11 +50,18 @@ class Register extends StatelessWidget {
                   height: 33,
                 ),
                 ElevatedButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Create Account",
-                      style: TextStyle(fontSize: 19),
-                    )),
+                  onPressed: () {},
+                  child: Text(
+                    "Create Account",
+                    style: TextStyle(fontSize: 19),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(BTNblue),
+                    padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8))),
+                  ),
+                ),
               ],
             )),
           ),
