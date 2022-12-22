@@ -70,6 +70,11 @@ class Register extends StatelessWidget {
                   children: [
                     Text("Do not have an account?",
                         style: TextStyle(fontSize: 18)),
+                    TextButton(
+                        onPressed: () {},
+                        child: Text("Sign in",
+                            style:
+                                TextStyle(color: Colors.black, fontSize: 18))),
                   ],
                 )
               ],
