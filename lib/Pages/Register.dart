@@ -40,11 +40,14 @@ class Register extends StatelessWidget {
                   height: 33,
                 ),
                 TextField(
-                  keyboardType: TextInputType.text,
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    hintText: "Enter Your Password : ",
-                  )),
+                    keyboardType: TextInputType.text,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      hintText: "Enter Your Password : ",
+                    )),
+                const SizedBox(
+                  height: 33,
+                ),
               ],
             )),
           ),
