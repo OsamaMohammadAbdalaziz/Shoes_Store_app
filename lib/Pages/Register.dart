@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Pages/Login.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 import 'package:shoes_store_app/Shared/Constant.dart';
 
@@ -71,7 +72,13 @@ class Register extends StatelessWidget {
                     Text("Do not have an account?",
                         style: TextStyle(fontSize: 18)),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) => const Login()),
+                            );
+                        },
                         child: Text("Sign in",
                             style:
                                 TextStyle(color: Colors.black, fontSize: 18))),
