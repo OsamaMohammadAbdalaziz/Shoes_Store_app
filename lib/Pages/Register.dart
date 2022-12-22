@@ -65,10 +65,13 @@ class Register extends StatelessWidget {
                 const SizedBox(
                   height: 33,
                 ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [],
-              )
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Do not have an account?",
+                        style: TextStyle(fontSize: 18)),
+                  ],
+                )
               ],
             )),
           ),

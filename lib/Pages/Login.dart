@@ -58,7 +58,7 @@ class Login extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Do not have account ?", style: TextStyle(fontSize: 18)),
+                  Text("Do not have an account?", style: TextStyle(fontSize: 18)),
                   TextButton(
                       onPressed: () {
                         Navigator.pushReplacement(
