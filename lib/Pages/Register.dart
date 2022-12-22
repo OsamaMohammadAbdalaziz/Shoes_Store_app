@@ -27,6 +27,9 @@ class Register extends StatelessWidget {
                     decoration: decorationTextfield.copyWith(
                       hintText: "Enter Your Username : ",
                     )),
+                const SizedBox(
+                  height: 33,
+                ),
               ],
             )),
           ),
