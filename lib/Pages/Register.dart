@@ -62,6 +62,9 @@ class Register extends StatelessWidget {
                         borderRadius: BorderRadius.circular(8))),
                   ),
                 ),
+                const SizedBox(
+                  height: 33,
+                ),
               ],
             )),
           ),
