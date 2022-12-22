@@ -48,6 +48,12 @@ class Register extends StatelessWidget {
                 const SizedBox(
                   height: 33,
                 ),
+                ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Create Account",
+                      style: TextStyle(fontSize: 19),
+                    )),
               ],
             )),
           ),
