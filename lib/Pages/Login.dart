@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Pages/Register.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 import 'package:shoes_store_app/Shared/Constant.dart';
 
@@ -57,12 +58,17 @@ class Login extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Do not have account ?",
-                  style: TextStyle(fontSize: 18)),
+                  Text("Do not have account ?", style: TextStyle(fontSize: 18)),
                   TextButton(
-                    onPressed: (){}, 
-                    child: Text("Sign up",
-                    style: TextStyle(color: Colors.black, fontSize: 18))),
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: ((context) => const Register()),
+                            ));
+                      },
+                      child: Text("Sign up",
+                          style: TextStyle(color: Colors.black, fontSize: 18))),
                 ],
               ),
             ],
