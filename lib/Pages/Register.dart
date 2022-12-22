@@ -36,6 +36,9 @@ class Register extends StatelessWidget {
                     decoration: InputDecoration(
                       hintText: "Enter Your Email : ",
                     )),
+                const SizedBox(
+                  height: 33,
+                ),
               ],
             )),
           ),
