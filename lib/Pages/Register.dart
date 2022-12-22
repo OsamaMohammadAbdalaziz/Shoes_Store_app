@@ -30,6 +30,12 @@ class Register extends StatelessWidget {
                 const SizedBox(
                   height: 33,
                 ),
+                TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      hintText: "Enter Your Email : ",
+                    )),
               ],
             )),
           ),
