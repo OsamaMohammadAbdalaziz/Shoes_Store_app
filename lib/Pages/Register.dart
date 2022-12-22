@@ -65,6 +65,10 @@ class Register extends StatelessWidget {
                 const SizedBox(
                   height: 33,
                 ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [],
+              )
               ],
             )),
           ),
