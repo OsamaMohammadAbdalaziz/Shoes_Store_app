@@ -1,9 +1,13 @@
 // ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Model/Item.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Details extends StatefulWidget {
+  Item product;
+  Details({required this.product});
+
   @override
   State<Details> createState() => _DetailsState();
 }

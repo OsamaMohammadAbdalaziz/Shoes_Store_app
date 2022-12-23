@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Model/Item.dart';
+import 'package:shoes_store_app/Pages/Product_details.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Home extends StatelessWidget {
@@ -22,7 +23,14 @@ class Home extends StatelessWidget {
               itemCount: items.length,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Details(product: items[index]),
+                      ),
+                    );
+                  },
                   // use ClipRRect & Positioned
                   child: GridTile(
                     child: Stack(
