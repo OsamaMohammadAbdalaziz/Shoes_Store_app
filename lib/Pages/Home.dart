@@ -152,7 +152,7 @@ class Home extends StatelessWidget {
                         bottom: 24,
                         child: Container(
                           child: Text(
-                            "0",
+                            "${carttt.SelectedProducts.length}",
                             style: TextStyle(
                               fontSize: 16,
                               color: BTNblue,
