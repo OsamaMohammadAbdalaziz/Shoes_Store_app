@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Pages/Home.dart';
 import 'package:shoes_store_app/Pages/Login.dart';
+import 'package:shoes_store_app/Pages/Product_details.dart';
 import 'package:shoes_store_app/Pages/Register.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Details(),
     );
   }
 }
