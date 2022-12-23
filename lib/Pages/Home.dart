@@ -11,7 +11,14 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          Text("\$ 40")
+          Row(
+            children: [
+              Text(
+                "\$ 40",
+                style: TextStyle(fontSize: 18),
+              ),
+            ],
+          )
         ],
         backgroundColor: appbarBlue,
         title: Text("Home"),
