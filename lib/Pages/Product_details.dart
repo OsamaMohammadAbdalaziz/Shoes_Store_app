@@ -136,7 +136,7 @@ class _DetailsState extends State<Details> {
                       width: 3,
                     ),
                     Text(
-                      "Shoes Shop",
+                      widget.product.location,
                       style: TextStyle(fontSize: 19),
                     ),
                   ],
