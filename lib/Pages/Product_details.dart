@@ -28,8 +28,8 @@ class Details extends StatelessWidget {
                         ),
                         padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 255, 255, 255),
-                        ),
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            shape: BoxShape.circle),
                       ))
                 ],
               ),
