@@ -124,8 +124,8 @@ class Details extends StatelessWidget {
                     width: 3,
                   ),
                   Text(
-                    "Shoes Store Shop",
-                    style: TextStyle(fontSize: 14),
+                    "Shoes Shop",
+                    style: TextStyle(fontSize: 19),
                   ),
                 ],
               ),
