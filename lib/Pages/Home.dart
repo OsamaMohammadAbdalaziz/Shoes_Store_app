@@ -142,42 +142,8 @@ class Home extends StatelessWidget {
         ),
         appBar: AppBar(
           actions: [
-            Row(
-              children: [
-                Stack(
-                  children: [
-                    Positioned(
-                      bottom: 24,
-                      child: Container(
-                        child: Text(
-                          "${carttt.SelectedProducts.length}",
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: BTNblue,
-                          ),
-                        ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            shape: BoxShape.circle),
-                      ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.add_shopping_cart),
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 12),
-                  child: Text(
-                    "\$ ${carttt.Price}",
-                    style: TextStyle(fontSize: 18),
-                  ),
-                ),
-              ],
-            )
-          ],
+        //  hreeeeeeeeee
+         ],
           backgroundColor: appbarBlue,
           title: Text("Home"),
         ),
