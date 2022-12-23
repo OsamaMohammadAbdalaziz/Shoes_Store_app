@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Pages/Home.dart';
 import 'package:shoes_store_app/Pages/Login.dart';
 import 'package:shoes_store_app/Pages/Register.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Register(),
+      home: Home(),
     );
   }
 }
