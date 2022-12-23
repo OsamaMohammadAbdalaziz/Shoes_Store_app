@@ -68,6 +68,10 @@ class Details extends StatelessWidget {
             children: [
               Container(
                 child: Text("New"),
+                decoration: BoxDecoration(
+                  color: BTNred,
+                  borderRadius: BorderRadius.circular(4),
+                ),
               ),
             ],
           )
