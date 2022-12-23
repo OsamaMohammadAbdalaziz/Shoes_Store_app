@@ -49,9 +49,14 @@ class Details extends StatelessWidget {
           )
         ],
         backgroundColor: appbarBlue,
-          title: Text("Product details"),
+        title: Text("Product details"),
       ),
-      body: Text("details"),
+      body: Column(
+        children: [
+          Image.asset("assets/image/1.webp"),
+          Text("details"),
+        ],
+      ),
     ));
   }
 }
