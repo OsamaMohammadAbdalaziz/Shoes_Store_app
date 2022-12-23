@@ -112,6 +112,11 @@ class Details extends StatelessWidget {
               const SizedBox(
                 width: 66,
               ),
+            Row(
+              children: [
+                Icon(Icons.edit_location,),
+              ],
+            ),
             ],
           )
         ],
