@@ -67,6 +67,7 @@ class Details extends StatelessWidget {
           Row(
             children: [
               Container(
+                padding: EdgeInsets.all(4),
                 child: Text("New"),
                 decoration: BoxDecoration(
                   color: BTNred,
