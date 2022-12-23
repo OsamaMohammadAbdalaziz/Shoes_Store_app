@@ -12,13 +12,22 @@ class CheckOut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final carttt = Provider.of<Cart>(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: appbarBlue,
         title: Text("Check Out"),
         actions: [ProductsAndPrice()],
       ),
-      body: SizedBox(height: 300,),
+      body: SizedBox(
+        height: 300,
+        child: ListView.builder(
+            padding: const EdgeInsets.all(8),
+            itemCount: carttt.SelectedProducts.length,
+            itemBuilder: (BuildContext context, int index) {
+              return Container();
+            }),
+      ),
     );
   }
 }
