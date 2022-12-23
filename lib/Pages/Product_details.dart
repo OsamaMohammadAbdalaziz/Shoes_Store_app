@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
@@ -26,6 +26,7 @@ class Details extends StatelessWidget {
                             fontSize: 16,
                           ),
                         ),
+                        padding: EdgeInsets.all(5),
                       ))
                 ],
               ),
