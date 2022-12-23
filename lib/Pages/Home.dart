@@ -17,6 +17,7 @@ class Home extends StatelessWidget {
                 Stack(
                   children: [
                     Positioned(
+                      bottom: 24,
                       child: Container(
                         child: Text(
                           "8",
