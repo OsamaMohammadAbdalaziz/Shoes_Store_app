@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Pages/CheckOut.dart';
 import 'package:shoes_store_app/Pages/Home.dart';
 import 'package:shoes_store_app/Pages/Login.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       },
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        home: CheckOut(),
       ),
     );
   }
