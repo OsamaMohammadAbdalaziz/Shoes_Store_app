@@ -13,56 +13,67 @@ class Home extends StatelessWidget {
         drawer: Drawer(
           child: Column(
             children: [
-              UserAccountsDrawerHeader(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/image/Space.png"),
-                      fit: BoxFit.cover),
+              Column(
+                children: [
+                  UserAccountsDrawerHeader(
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/image/Space.png"),
+                          fit: BoxFit.cover),
+                    ),
+                    currentAccountPicture: CircleAvatar(
+                      radius: 55,
+                      backgroundImage: AssetImage("assets/image/Osama.jpg"),
+                    ),
+                    accountEmail: Text("osama.mohammad2352002@gmail.com",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Color.fromARGB(255, 255, 255, 255),
+                        )),
+                    accountName: Text("Osama Mohammad",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Color.fromARGB(255, 255, 255, 255),
+                        )),
+                  ),
+                  ListTile(
+                    title: Text("Home"),
+                    leading: Icon(Icons.home),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text("My Products"),
+                    leading: Icon(Icons.add_shopping_cart),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text("Setting"),
+                    leading: Icon(Icons.settings),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text("Help"),
+                    leading: Icon(Icons.help_center),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text("Information"),
+                    leading: Icon(Icons.perm_device_information),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text("Logout"),
+                    leading: Icon(Icons.exit_to_app),
+                    onTap: () {},
+                  ),
+                ],
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 12),
+                child: Text(
+                  "Developed by Osama Mohammad © 2023",
+                  style: TextStyle(fontSize: 16),
                 ),
-                currentAccountPicture: CircleAvatar(
-                  radius: 55,
-                  backgroundImage: AssetImage("assets/image/Osama.jpg"),
-                ),
-                accountEmail: Text("osama.mohammad2352002@gmail.com",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                    )),
-                accountName: Text("Osama Mohammad",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                    )),
-              ),
-              ListTile(
-                title: Text("Home"),
-                leading: Icon(Icons.home),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("My Products"),
-                leading: Icon(Icons.add_shopping_cart),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("Setting"),
-                leading: Icon(Icons.settings),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("Help"),
-                leading: Icon(Icons.help_center),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("Information"),
-                leading: Icon(Icons.perm_device_information),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text("Logout"),
-                leading: Icon(Icons.exit_to_app),
-                onTap: () {},
               ),
             ],
           ),
