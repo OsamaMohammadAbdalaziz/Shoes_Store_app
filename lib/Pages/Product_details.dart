@@ -135,7 +135,17 @@ class Details extends StatelessWidget {
           const SizedBox(
             height: 16,
           ),
-          Text("Details : ", style: TextStyle(fontSize: 18)),
+          SizedBox(
+            width: double.infinity,
+            child: Text(
+              "Details : ",
+              style: TextStyle(fontSize: 22),
+              textAlign: TextAlign.start,
+            ),
+          ),
+          const SizedBox(
+            height: 16,
+          ),
         ],
       ),
     ));
