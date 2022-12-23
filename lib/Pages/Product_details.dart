@@ -17,20 +17,25 @@ class Details extends StatelessWidget {
               Stack(
                 children: [
                   Positioned(
-                      bottom: 24,
-                      child: Container(
-                        child: Text(
-                          "8",
-                          style: TextStyle(
-                            color: BTNblue,
-                            fontSize: 16,
-                          ),
+                    bottom: 24,
+                    child: Container(
+                      child: Text(
+                        "8",
+                        style: TextStyle(
+                          color: BTNblue,
+                          fontSize: 16,
                         ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            shape: BoxShape.circle),
-                      ))
+                      ),
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          shape: BoxShape.circle),
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add_shopping_cart),
+                  ),
                 ],
               ),
             ],
