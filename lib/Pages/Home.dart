@@ -17,6 +17,10 @@ class Home extends StatelessWidget {
                 "\$ 40",
                 style: TextStyle(fontSize: 18),
               ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.add_shopping_cart),
+              ),
             ],
           )
         ],
