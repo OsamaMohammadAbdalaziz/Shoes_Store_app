@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) :super(key: key);
@@ -10,7 +11,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("data"),
+        backgroundColor: appbarBlue,
+        title: Text("Home"),
+        actions: [],
       ),
     );
   }
