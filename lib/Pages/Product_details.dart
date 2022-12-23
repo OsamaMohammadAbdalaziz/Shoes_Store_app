@@ -73,9 +73,12 @@ class Details extends StatelessWidget {
                   style: TextStyle(fontSize: 12),
                 ),
                 decoration: BoxDecoration(
-                  color: BTNred,
+                  color: Color.fromARGB(255, 255, 129, 129),
                   borderRadius: BorderRadius.circular(4),
                 ),
+              ),
+              const SizedBox(
+                width: 8,
               ),
             ],
           )
