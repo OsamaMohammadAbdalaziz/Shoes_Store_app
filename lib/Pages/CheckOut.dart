@@ -18,6 +18,7 @@ class CheckOut extends StatelessWidget {
         title: Text("Check Out"),
         actions: [ProductsAndPrice()],
       ),
+      body: SizedBox(height: 300,),
     );
   }
 }
