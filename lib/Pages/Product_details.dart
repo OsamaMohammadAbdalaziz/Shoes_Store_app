@@ -54,8 +54,13 @@ class Details extends StatelessWidget {
       body: Column(
         children: [
           Image.asset("assets/image/1.webp"),
-          const SizedBox(height: 11,),
-          Text("\$80"),
+          const SizedBox(
+            height: 11,
+          ),
+          Text(
+            "\$80",
+            style: TextStyle(fontSize: 20),
+          ),
         ],
       ),
     ));
