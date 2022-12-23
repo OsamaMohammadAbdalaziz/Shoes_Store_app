@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Model/Item.dart';
 import 'package:shoes_store_app/Pages/Home.dart';
 import 'package:shoes_store_app/Pages/Login.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
@@ -22,9 +23,9 @@ class MyApp extends StatelessWidget {
       create: (context) {
         return Cart();
       },
-      child: const MaterialApp(
+      child:  MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        home: Details(product: Item(imagepath: "assets/image/5.webp", price: 80,location: "Outlet Store",name: "product1"),),
       ),
     );
   }

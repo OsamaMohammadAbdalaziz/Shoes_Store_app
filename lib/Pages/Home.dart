@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:shoes_store_app/Model/Item.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
+import 'package:shoes_store_app/Provider/Cart.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Home extends StatelessWidget {
@@ -173,7 +175,9 @@ class Home extends StatelessWidget {
             )
           ],
           backgroundColor: appbarBlue,
-          title: Text("Home"),
+          title: Consumer<Cart>(builder: ((context, Cart, child) {
+            return Text("${Cart.SelectedProducts}");
+          })),
         ),
       ),
     );
