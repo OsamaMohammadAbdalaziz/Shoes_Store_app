@@ -70,7 +70,7 @@ class Details extends StatelessWidget {
                 padding: EdgeInsets.all(4),
                 child: Text(
                   "New",
-                  style: TextStyle(fontSize: 12),
+                  style: TextStyle(fontSize: 15),
                 ),
                 decoration: BoxDecoration(
                   color: Color.fromARGB(255, 255, 129, 129),
@@ -108,6 +108,9 @@ class Details extends StatelessWidget {
                     color: Color.fromARGB(255, 255, 191, 0),
                   ),
                 ],
+              ),
+              const SizedBox(
+                width: 66,
               ),
             ],
           )
