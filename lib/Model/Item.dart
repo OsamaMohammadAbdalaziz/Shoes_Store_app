@@ -14,7 +14,7 @@ final List<Item> items = [
   Item(
       name: "product1",
       imagepath: "assets/image/1.webp",
-      price: 90,
+      price: 80,
       location: "Outlet Store"),
   Item(
       name: "product2",
@@ -24,31 +24,31 @@ final List<Item> items = [
   Item(
       name: "product3",
       imagepath: "assets/image/3.webp",
-      price: 100,
+      price: 80,
       location: "Outlet Store"),
   Item(
       name: "product4",
       imagepath: "assets/image/4.webp",
-      price: 150,
+      price: 80,
       location: "Outlet Store"),
   Item(
       name: "product5",
       imagepath: "assets/image/5.webp",
-      price: 125,
+      price: 80,
       location: "Outlet Store"),
   Item(
       name: "product6",
       imagepath: "assets/image/6.webp",
-      price: 165,
+      price: 80,
       location: "Outlet Store"),
   Item(
       name: "product6",
       imagepath: "assets/image/7.webp",
-      price: 180,
+      price: 80,
       location: "Outlet Store"),
   Item(
       name: "product7",
       imagepath: "assets/image/8.webp",
-      price: 200,
+      price: 80,
       location: "Outlet Store"),
 ];
