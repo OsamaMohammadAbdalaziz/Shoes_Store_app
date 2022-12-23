@@ -13,7 +13,12 @@ class Home extends StatelessWidget {
   final List<Item> items = [
     Item(imagepath: "assets/image/1.webp", price: 80),
     Item(imagepath: "assets/image/2.webp", price: 80),
+    Item(imagepath: "assets/image/3.jpg", price: 80),
+    Item(imagepath: "assets/image/4.jpg", price: 80),
+    Item(imagepath: "assets/image/5.webp", price: 80),
     Item(imagepath: "assets/image/6.webp", price: 80),
+    Item(imagepath: "assets/image/7.webp", price: 80),
+    Item(imagepath: "assets/image/8.webp", price: 80),
   ];
 
   Home({super.key});
@@ -45,7 +50,7 @@ class Home extends StatelessWidget {
                           left: 0,
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(55),
-                            child: Image.asset("assets/image/1.webp"),
+                            child: Image.asset(items[index].imagepath),
                           ),
                         ),
                       ],
