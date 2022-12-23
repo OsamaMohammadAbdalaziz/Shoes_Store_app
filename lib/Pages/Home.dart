@@ -18,8 +18,8 @@ class Home extends StatelessWidget {
                 mainAxisSpacing: 33),
             itemCount: 8,
             itemBuilder: (BuildContext context, int index) {
-              return Container(
-                color: Colors.amber,
+              return GridTile(
+                child: Image.asset("assets/image/1.webp"),
               );
             }),
         drawer: Drawer(
