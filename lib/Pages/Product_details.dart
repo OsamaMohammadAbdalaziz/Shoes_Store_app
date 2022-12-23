@@ -11,7 +11,17 @@ class Details extends StatelessWidget {
             actions: [
               Row(
                 children: [
-                  Stack(),
+                  Stack(
+                    children: [
+                      Positioned(
+                        bottom: 24,
+                        child:Container(
+                          child: Text("8"),
+                        ) 
+                        
+                        )
+                    ],
+                  ),
                 ],
               )
             ],
