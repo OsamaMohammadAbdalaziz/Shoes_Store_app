@@ -16,10 +16,13 @@ class Home extends StatelessWidget {
               Stack(
                 children: [
                   Container(
-                    child: Text("8"),
+                    child: Text(
+                      "8",
+                    style: TextStyle(color:BTNblue),
+                    ),
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 24, 24, 152),
+                        color: Color.fromARGB(255, 255, 255, 255),
                         shape: BoxShape.circle),
                   ),
                   IconButton(
