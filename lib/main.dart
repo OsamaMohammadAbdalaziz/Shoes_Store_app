@@ -6,6 +6,9 @@ import 'package:shoes_store_app/Pages/Login.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
 import 'package:shoes_store_app/Pages/Register.dart';
 
+import 'package:provider/provider.dart';
+import 'package:shoes_store_app/Provider/Cart.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,9 +18,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Home(),
+    return ChangeNotifierProvider(
+      create: (context) {
+        return Cart();
+      },
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Home(),
+      ),
     );
   }
 }
