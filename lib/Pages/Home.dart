@@ -44,7 +44,10 @@ class Home extends StatelessWidget {
                           color: Color.fromARGB(255, 62, 94, 70),
                           onPressed: () {},
                           icon: Icon(Icons.add)),
-                      leading: Text("\$ 80"),
+                      leading: Text(
+                        "\$80",
+                        style: TextStyle(fontSize: 14),
+                      ),
                       title: Text(
                         "",
                       ),
