@@ -48,8 +48,10 @@ class Details extends StatelessWidget {
             ],
           )
         ],
+        backgroundColor: appbarBlue,
+          title: Text("Product details"),
       ),
-      body: Text("Details"),
+      body: Text("details"),
     ));
   }
 }
