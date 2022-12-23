@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
                   Container(
                     child: Text(
                       "8",
-                    style: TextStyle(color:BTNblue),
+                      style: TextStyle(fontSize: 18, color: BTNblue),
                     ),
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
