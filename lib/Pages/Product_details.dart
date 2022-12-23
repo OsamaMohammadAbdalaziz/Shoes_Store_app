@@ -123,7 +123,10 @@ class Details extends StatelessWidget {
                   const SizedBox(
                     width: 3,
                   ),
-                  Text("Flower Shop")
+                  Text(
+                    "Shoes Store Shop",
+                    style: TextStyle(fontSize: 14),
+                  ),
                 ],
               ),
             ],
