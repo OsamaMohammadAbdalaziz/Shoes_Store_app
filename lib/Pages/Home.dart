@@ -51,10 +51,13 @@ class Home extends StatelessWidget {
                     ),
                     footer: GridTileBar(
                       // backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing: IconButton(
-                          color: Color.fromARGB(255, 62, 94, 70),
-                          onPressed: () {},
-                          icon: Icon(Icons.add)),
+                      trailing:
+                          Consumer<Cart>(builder: ((context, carttt, child) {
+                        return IconButton(
+                            color: Color.fromARGB(255, 62, 94, 70),
+                            onPressed: () {},
+                            icon: Icon(Icons.add));
+                      })),
                       leading: Text(
                         "\$80",
                         style: TextStyle(fontSize: 14),
@@ -175,9 +178,7 @@ class Home extends StatelessWidget {
             )
           ],
           backgroundColor: appbarBlue,
-          title: Consumer<Cart>(builder: ((context, Cart, child) {
-            return Text("${Cart.SelectedProducts}");
-          })),
+          title: Text("Home"),
         ),
       ),
     );
