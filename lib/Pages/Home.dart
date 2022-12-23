@@ -10,7 +10,24 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        drawer: Drawer(),
+        drawer: Drawer(
+          child: Column(
+            children: [
+              UserAccountsDrawerHeader(
+                accountEmail: Text("osama.mohammad2352002@gmail.com",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    )),
+                accountName: Text("Osama Mohammad",
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                    )),
+              ),
+            ],
+          ),
+        ),
         appBar: AppBar(
           actions: [
             Row(
