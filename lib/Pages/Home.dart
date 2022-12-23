@@ -145,30 +145,32 @@ class Home extends StatelessWidget {
           actions: [
             Row(
               children: [
-                Stack(
-                  children: [
-                    Positioned(
-                      bottom: 24,
-                      child: Container(
-                        child: Text(
-                          "0",
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: BTNblue,
+                Consumer<Cart>(builder: ((context, carttt, child) {
+                  return Stack(
+                    children: [
+                      Positioned(
+                        bottom: 24,
+                        child: Container(
+                          child: Text(
+                            "0",
+                            style: TextStyle(
+                              fontSize: 16,
+                              color: BTNblue,
+                            ),
                           ),
+                          padding: EdgeInsets.all(5),
+                          decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              shape: BoxShape.circle),
                         ),
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 255, 255, 255),
-                            shape: BoxShape.circle),
                       ),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.add_shopping_cart),
-                    ),
-                  ],
-                ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.add_shopping_cart),
+                      ),
+                    ],
+                  );
+                })),
                 Padding(
                   padding: const EdgeInsets.only(right: 12),
                   child: Text(
