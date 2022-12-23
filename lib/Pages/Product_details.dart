@@ -9,7 +9,11 @@ class Details extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             actions: [
-              Row()
+              Row(
+                children: [
+                  Stack(),
+                ],
+              )
             ],
           ),
       body: Text("Details"),
