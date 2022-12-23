@@ -16,6 +16,7 @@ class Home extends StatelessWidget {
                 childAspectRatio: 3 / 2,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 33),
+            itemCount: 8,
             itemBuilder: (BuildContext context, int index) {
               return Container();
             }),
