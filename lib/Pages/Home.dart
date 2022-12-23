@@ -45,6 +45,11 @@ class Home extends StatelessWidget {
                 onTap: () {},
               ),
               ListTile(
+                title: Text("Setting"),
+                leading: Icon(Icons.settings),
+                onTap: () {},
+              ),
+              ListTile(
                 title: Text("Help"),
                 leading: Icon(Icons.help_center),
                 onTap: () {},
