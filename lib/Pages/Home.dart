@@ -10,11 +10,13 @@ class Item {
 }
 
 class Home extends StatelessWidget {
-  List items = [
-    Item(imagepath:"assets/image/1.webp", price: 80),
-    Item(imagepath:"assets/image/2.webp", price: 80),
-    Item(imagepath:"assets/image/6.webp", price: 80),
-    ];
+  final List<Item> items = [
+    Item(imagepath: "assets/image/1.webp", price: 80),
+    Item(imagepath: "assets/image/2.webp", price: 80),
+    Item(imagepath: "assets/image/6.webp", price: 80),
+  ];
+
+  Home({super.key});
 
   @override
   Widget build(BuildContext context) {
