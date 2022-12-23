@@ -64,7 +64,7 @@ class _DetailsState extends State<Details> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset("assets/image/1.webp"),
+            Image.asset(widget.product.imagepath),
             const SizedBox(
               height: 11,
             ),
