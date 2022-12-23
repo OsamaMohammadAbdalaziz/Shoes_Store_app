@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
@@ -13,9 +13,20 @@ class Home extends StatelessWidget {
         actions: [
           Row(
             children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.add_shopping_cart),
+              Stack(
+                children: [
+                  Container(
+                    child: Text("8"),
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 24, 24, 152),
+                        shape: BoxShape.circle),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.add_shopping_cart),
+                  ),
+                ],
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 12),
