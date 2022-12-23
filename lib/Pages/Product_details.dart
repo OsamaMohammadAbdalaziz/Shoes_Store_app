@@ -61,6 +61,9 @@ class Details extends StatelessWidget {
             "\$80",
             style: TextStyle(fontSize: 20),
           ),
+          const SizedBox(
+            height: 16,
+          ),
         ],
       ),
     ));
