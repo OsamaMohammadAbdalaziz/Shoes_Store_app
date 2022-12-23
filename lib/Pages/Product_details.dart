@@ -40,6 +40,7 @@ class Details extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.only(right: 12),
+                child: Text("\$80",),
               ),
             ],
           )
