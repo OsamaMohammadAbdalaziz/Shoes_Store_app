@@ -3,8 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
-class Details extends StatelessWidget {
-  const Details({Key? key}) : super(key: key);
+class Details extends StatefulWidget {
+  @override
+  State<Details> createState() => _DetailsState();
+}
+
+class _DetailsState extends State<Details> {
+  // const Details({Key? key}) : super(key: key);
+  bool isShowMore = true;
 
   @override
   Widget build(BuildContext context) {
@@ -152,7 +158,21 @@ class Details extends StatelessWidget {
               style: TextStyle(
                 fontSize: 18,
               ),
+              maxLines: isShowMore ? 3 : null,
+              overflow: TextOverflow.fade,
             ),
+            TextButton(
+                onPressed: () {
+                  setState(() {
+                    isShowMore = !isShowMore;
+                  });
+                },
+                child: Text(
+                  isShowMore ? "Show more" : "Show less",
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                )),
           ],
         ),
       ),
