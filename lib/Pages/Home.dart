@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:shoes_store_app/Model/Item.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
 import 'package:shoes_store_app/Provider/Cart.dart';
+import 'package:shoes_store_app/Shared/AppBar.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Home extends StatelessWidget {
@@ -141,9 +142,7 @@ class Home extends StatelessWidget {
           ),
         ),
         appBar: AppBar(
-          actions: [
-        //  hreeeeeeeeee
-         ],
+          actions: [ProductsAndPrice()],
           backgroundColor: appbarBlue,
           title: Text("Home"),
         ),
