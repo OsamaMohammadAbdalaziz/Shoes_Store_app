@@ -3,8 +3,18 @@
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
+class Item {
+  String imagepath;
+  double price;
+  Item({required this.imagepath, required this.price});
+}
+
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  List items = [
+    Item(imagepath:"assets/image/1.webp", price: 80),
+    Item(imagepath:"assets/image/2.webp", price: 80),
+    Item(imagepath:"assets/image/6.webp", price: 80),
+    ];
 
   @override
   Widget build(BuildContext context) {
