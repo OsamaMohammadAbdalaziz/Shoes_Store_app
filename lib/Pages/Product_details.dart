@@ -1,4 +1,7 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Details extends StatelessWidget {
   const Details({Key? key}) : super(key: key);
@@ -7,25 +10,29 @@ class Details extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-          appBar: AppBar(
-            actions: [
-              Row(
+      appBar: AppBar(
+        actions: [
+          Row(
+            children: [
+              Stack(
                 children: [
-                  Stack(
-                    children: [
-                      Positioned(
-                        bottom: 24,
-                        child:Container(
-                          child: Text("8"),
-                        ) 
-                        
-                        )
-                    ],
-                  ),
+                  Positioned(
+                      bottom: 24,
+                      child: Container(
+                        child: Text(
+                          "8",
+                          style: TextStyle(
+                            color: BTNblue,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ))
                 ],
-              )
+              ),
             ],
-          ),
+          )
+        ],
+      ),
       body: Text("Details"),
     ));
   }
