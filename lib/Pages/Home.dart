@@ -14,6 +14,10 @@ class Home extends StatelessWidget {
           child: Column(
             children: [
               UserAccountsDrawerHeader(
+                currentAccountPicture: CircleAvatar(
+                  radius: 55,
+                  backgroundImage: AssetImage("assets/image/Osama.jpg"),
+                ),
                 accountEmail: Text("osama.mohammad2352002@gmail.com",
                     style: TextStyle(
                       fontSize: 18,
