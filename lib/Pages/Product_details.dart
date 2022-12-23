@@ -38,6 +38,9 @@ class Details extends StatelessWidget {
                   ),
                 ],
               ),
+              Padding(
+                padding: EdgeInsets.only(right: 12),
+              ),
             ],
           )
         ],
