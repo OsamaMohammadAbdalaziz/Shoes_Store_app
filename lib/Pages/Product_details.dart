@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
@@ -79,6 +79,15 @@ class Details extends StatelessWidget {
               ),
               const SizedBox(
                 width: 8,
+              ),
+              Row(
+                children: [
+                  Icon(
+                    Icons.star,
+                    size: 26,
+                    color: Color.fromARGB(255, 255, 191, 0),
+                  ),
+                ],
               ),
             ],
           )
