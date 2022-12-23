@@ -135,6 +135,7 @@ class Details extends StatelessWidget {
           const SizedBox(
             height: 16,
           ),
+          Text("Details : ", style: TextStyle(fontSize: 18)),
         ],
       ),
     ));
