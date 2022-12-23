@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
                   onTap: () {},
+                  // use ClipRRect & Positioned
                   child: GridTile(
                     child: Stack(
                       children: [
@@ -37,6 +38,7 @@ class Home extends StatelessWidget {
                         ),
                       ],
                     ),
+                  footer: GridTileBar(),
                   ),
                 );
               }),
