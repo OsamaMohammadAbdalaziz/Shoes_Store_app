@@ -66,7 +66,9 @@ class Details extends StatelessWidget {
           ),
           Row(
             children: [
-              Container()
+              Container(
+                child: Text("New"),
+              ),
             ],
           )
         ],
