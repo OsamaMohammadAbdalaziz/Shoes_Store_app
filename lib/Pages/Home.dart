@@ -16,18 +16,20 @@ class Home extends StatelessWidget {
               children: [
                 Stack(
                   children: [
-                    Container(
-                      child: Text(
-                        "8",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: BTNblue,
+                    Positioned(
+                      child: Container(
+                        child: Text(
+                          "8",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: BTNblue,
+                          ),
                         ),
+                        padding: EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            shape: BoxShape.circle),
                       ),
-                      padding: EdgeInsets.all(5),
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          shape: BoxShape.circle),
                     ),
                     IconButton(
                       onPressed: () {},
