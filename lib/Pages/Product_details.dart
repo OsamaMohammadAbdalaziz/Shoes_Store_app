@@ -69,7 +69,7 @@ class _DetailsState extends State<Details> {
               height: 11,
             ),
             Text(
-              "\$80",
+              "\$ ${widget.product.price}",
               style: TextStyle(fontSize: 20),
             ),
             const SizedBox(
