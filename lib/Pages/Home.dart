@@ -12,6 +12,7 @@ class Home extends StatelessWidget {
       child: Scaffold(
         drawer: Drawer(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
                 children: [
