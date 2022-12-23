@@ -54,6 +54,11 @@ class Home extends StatelessWidget {
                 leading: Icon(Icons.help_center),
                 onTap: () {},
               ),
+              ListTile(
+                title: Text("Information"),
+                leading: Icon(Icons.perm_device_information),
+                onTap: () {},
+              ),
             ],
           ),
         ),
