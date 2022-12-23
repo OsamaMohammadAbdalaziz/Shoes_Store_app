@@ -18,7 +18,7 @@ class Home extends StatelessWidget {
                 icon: Icon(Icons.add_shopping_cart),
               ),
               Padding(
-                padding: const EdgeInsets.all(11.0),
+                padding: const EdgeInsets.only(right: 12),
                 child: Text(
                   "\$ 40",
                   style: TextStyle(fontSize: 18),
