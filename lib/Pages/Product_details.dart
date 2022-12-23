@@ -131,7 +131,10 @@ class Details extends StatelessWidget {
                 ],
               ),
             ],
-          )
+          ),
+          const SizedBox(
+            height: 16,
+          ),
         ],
       ),
     ));
