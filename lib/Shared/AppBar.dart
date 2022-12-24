@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shoes_store_app/Pages/CheckOut.dart';
 import 'package:shoes_store_app/Provider/Cart.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 
@@ -32,7 +33,13 @@ class ProductsAndPrice extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CheckOut(),
+                    ));
+              },
               icon: Icon(Icons.add_shopping_cart),
             ),
           ],
