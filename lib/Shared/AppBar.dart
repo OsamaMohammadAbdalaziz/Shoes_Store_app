@@ -19,6 +19,10 @@ class ProductsAndPrice extends StatelessWidget {
             Positioned(
               bottom: 24,
               child: Container(
+                padding: EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    shape: BoxShape.circle),
                 child: Text(
                   "${carttt.SelectedProducts.length}",
                   style: TextStyle(
@@ -26,10 +30,6 @@ class ProductsAndPrice extends StatelessWidget {
                     color: BTNblue,
                   ),
                 ),
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 255, 255, 255),
-                    shape: BoxShape.circle),
               ),
             ),
             IconButton(
