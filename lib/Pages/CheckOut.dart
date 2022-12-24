@@ -49,6 +49,13 @@ class CheckOut extends StatelessWidget {
                   }),
             ),
           ),
+        ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "Pay",
+                  style: TextStyle(fontSize: 19),
+                ),
+              ),
         ],
       ),
     );
