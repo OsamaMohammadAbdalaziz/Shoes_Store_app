@@ -30,7 +30,7 @@ class CheckOut extends StatelessWidget {
                   child: ListTile(
                     subtitle: Text("TEST"),
                     leading: CircleAvatar(
-                      backgroundImage: AssetImage(carttt.SelectedProducts[index]),
+                      backgroundImage: AssetImage(carttt.SelectedProducts[index].imagepath),
                     ),
                     title: Text("TEST"),
                     trailing: IconButton(
