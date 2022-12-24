@@ -52,7 +52,7 @@ class CheckOut extends StatelessWidget {
           ElevatedButton(
             onPressed: () {},
             child: Text(
-              "Pay",
+              "Pay \$ ${carttt.Price}",
               style: TextStyle(fontSize: 19),
             ),
             style: ButtonStyle(
