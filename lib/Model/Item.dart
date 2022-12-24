@@ -12,7 +12,7 @@ class Item {
 
 final List<Item> items = [
   Item(
-      name: "product1",
+      name: "adidas",
       imagepath: "assets/image/1.webp",
       price: 80,
       location: "Outlet Store"),
