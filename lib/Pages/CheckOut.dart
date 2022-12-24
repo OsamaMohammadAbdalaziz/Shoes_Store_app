@@ -19,32 +19,37 @@ class CheckOut extends StatelessWidget {
         title: Text("Check Out"),
         actions: [ProductsAndPrice()],
       ),
-      body: SingleChildScrollView(
-        child: SizedBox(
-          height: 550,
-          child: ListView.builder(
-              padding: const EdgeInsets.all(8),
-              itemCount: carttt.SelectedProducts.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Card(
-                  child: ListTile(
-                    title: Text(
-                      carttt.SelectedProducts[index].name,
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    subtitle: Text("TEST"),
-                    leading: CircleAvatar(
-                      backgroundImage:
-                          AssetImage(carttt.SelectedProducts[index].imagepath),
-                    ),
-                    trailing: IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.remove),
-                    ),
-                  ),
-                );
-              }),
-        ),
+      body: Column(
+        children: [
+          SingleChildScrollView(
+            child: SizedBox(
+              height: 550,
+              child: ListView.builder(
+                  padding: const EdgeInsets.all(8),
+                  itemCount: carttt.SelectedProducts.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Card(
+                      child: ListTile(
+                        title: Text(
+                          carttt.SelectedProducts[index].name,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                        subtitle: Text(
+                            "${carttt.SelectedProducts[index].price} - ${carttt.SelectedProducts[index].location}"),
+                        leading: CircleAvatar(
+                          backgroundImage:
+                              AssetImage(carttt.SelectedProducts[index].imagepath),
+                        ),
+                        trailing: IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.remove),
+                        ),
+                      ),
+                    );
+                  }),
+            ),
+          ),
+        ],
       ),
     );
   }
