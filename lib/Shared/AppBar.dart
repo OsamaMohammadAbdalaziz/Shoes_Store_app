@@ -24,7 +24,7 @@ class ProductsAndPrice extends StatelessWidget {
                     color: Color.fromARGB(255, 255, 255, 255),
                     shape: BoxShape.circle),
                 child: Text(
-                  "${carttt.SelectedProducts.length}",
+                  "${carttt.itemCount}",
                   style: TextStyle(
                     fontSize: 16,
                     color: BTNblue,
