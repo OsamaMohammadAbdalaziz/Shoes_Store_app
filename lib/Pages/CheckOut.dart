@@ -37,8 +37,8 @@ class CheckOut extends StatelessWidget {
                         subtitle: Text(
                             "${carttt.SelectedProducts[index].price} - ${carttt.SelectedProducts[index].location}"),
                         leading: CircleAvatar(
-                          backgroundImage:
-                              AssetImage(carttt.SelectedProducts[index].imagepath),
+                          backgroundImage: AssetImage(
+                              carttt.SelectedProducts[index].imagepath),
                         ),
                         trailing: IconButton(
                           onPressed: () {},
@@ -49,13 +49,19 @@ class CheckOut extends StatelessWidget {
                   }),
             ),
           ),
-        ElevatedButton(
-                onPressed: () {},
-                child: Text(
-                  "Pay",
-                  style: TextStyle(fontSize: 19),
-                ),
-              ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text(
+              "Pay",
+              style: TextStyle(fontSize: 19),
+            ),
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(BTNred),
+              padding: MaterialStateProperty.all(EdgeInsets.all(12)),
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8))),
+            ),
+          ),
         ],
       ),
     );
