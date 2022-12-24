@@ -42,12 +42,12 @@ final List<Item> items = [
       price: 80,
       location: "Outlet Store"),
   Item(
-      name: "product6",
+      name: "product7",
       imagepath: "assets/image/7.webp",
       price: 80,
       location: "Outlet Store"),
   Item(
-      name: "product7",
+      name: "product8",
       imagepath: "assets/image/8.webp",
       price: 80,
       location: "Outlet Store"),
