@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shoes_store_app/Model/Item.dart';
+import 'package:shoes_store_app/Pages/CheckOut.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
 import 'package:shoes_store_app/Provider/Cart.dart';
 import 'package:shoes_store_app/Shared/AppBar.dart';
@@ -107,7 +108,13 @@ class Home extends StatelessWidget {
                   ListTile(
                     title: Text("My Products"),
                     leading: Icon(Icons.add_shopping_cart),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => CheckOut(),
+                    ));
+                    },
                   ),
                   ListTile(
                     title: Text("Setting"),
