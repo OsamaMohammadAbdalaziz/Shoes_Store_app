@@ -10,7 +10,11 @@ add(Item product){
   Price += product.price.round();
   notifyListeners();
 }
-
+delete(Item product){
+  SelectedProducts.remove(product);
+  Price -= product.price.round();
+  notifyListeners();
+}
 
 
 }

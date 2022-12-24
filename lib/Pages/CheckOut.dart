@@ -41,7 +41,9 @@ class CheckOut extends StatelessWidget {
                               carttt.SelectedProducts[index].imagepath),
                         ),
                         trailing: IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            
+                          },
                           icon: Icon(Icons.remove),
                         ),
                       ),
@@ -52,7 +54,7 @@ class CheckOut extends StatelessWidget {
           ElevatedButton(
             onPressed: () {},
             child: Text(
-              "Pay \$ ${carttt.Price}",
+              "Pay \$${carttt.Price}",
               style: TextStyle(fontSize: 19),
             ),
             style: ButtonStyle(
