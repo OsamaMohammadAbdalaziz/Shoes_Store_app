@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:shoes_store_app/Pages/Home.dart';
 import 'package:shoes_store_app/Pages/Register.dart';
 import 'package:shoes_store_app/Shared/Colors.dart';
 import 'package:shoes_store_app/Shared/Constant.dart';
@@ -40,7 +41,13 @@ class Login extends StatelessWidget {
                 height: 33,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: ((context) => const Home()),
+                      ));
+                },
                 child: Text(
                   "Sign in",
                   style: TextStyle(fontSize: 19),

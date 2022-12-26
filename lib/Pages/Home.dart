@@ -143,10 +143,10 @@ class Home extends StatelessWidget {
                     leading: Icon(Icons.exit_to_app),
                     onTap: () {
                       Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: ((context) => const Login()),
-                            ));
+                          context,
+                          MaterialPageRoute(
+                            builder: ((context) => const Login()),
+                          ));
                     },
                   ),
                 ],
