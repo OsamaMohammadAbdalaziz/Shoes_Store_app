@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shoes_store_app/Model/Item.dart';
 import 'package:shoes_store_app/Pages/CheckOut.dart';
+import 'package:shoes_store_app/Pages/Login.dart';
 import 'package:shoes_store_app/Pages/Product_details.dart';
 import 'package:shoes_store_app/Provider/Cart.dart';
 import 'package:shoes_store_app/Shared/AppBar.dart';
@@ -140,7 +141,13 @@ class Home extends StatelessWidget {
                   ListTile(
                     title: Text("Logout"),
                     leading: Icon(Icons.exit_to_app),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: ((context) => const Login()),
+                            ));
+                    },
                   ),
                 ],
               ),
