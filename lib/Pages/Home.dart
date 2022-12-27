@@ -63,7 +63,7 @@ class Home extends StatelessWidget {
                           },
                           icon: Icon(Icons.add)),
                       leading: Text(
-                        "\$80",
+                        "\$ ${items[index].price.round()}",
                         style: TextStyle(fontSize: 14),
                       ),
                       title: Text(
