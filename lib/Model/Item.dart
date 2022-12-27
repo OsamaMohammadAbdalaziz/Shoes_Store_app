@@ -4,7 +4,7 @@ class Item {
   String name;
   String location;
   String imagepath;
-  double price;
+  int price;
   Item(
       {required this.imagepath,
       required this.price,
