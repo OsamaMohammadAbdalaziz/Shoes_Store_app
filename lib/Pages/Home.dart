@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, file_names
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -163,7 +163,7 @@ class Home extends StatelessWidget {
         ),
         appBar: AppBar(
           actions: [ProductsAndPrice()],
-          backgroundColor: appbarBlue,
+          backgroundColor: appbarBlack,
           title: Text("Home"),
         ),
       ),

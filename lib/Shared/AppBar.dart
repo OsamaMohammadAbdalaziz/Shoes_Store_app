@@ -27,7 +27,7 @@ class ProductsAndPrice extends StatelessWidget {
                   "${carttt.itemCount}",
                   style: TextStyle(
                     fontSize: 16,
-                    color: BTNblue,
+                    color: BTNblack,
                   ),
                 ),
               ),

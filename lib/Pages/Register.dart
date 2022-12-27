@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, file_names
 
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Pages/Login.dart';
@@ -57,7 +57,7 @@ class Register extends StatelessWidget {
                     style: TextStyle(fontSize: 19),
                   ),
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(BTNblue),
+                    backgroundColor: MaterialStateProperty.all(BTNblack),
                     padding: MaterialStateProperty.all(EdgeInsets.all(12)),
                     shape: MaterialStateProperty.all(RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8))),

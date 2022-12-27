@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_local_variable
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unused_local_variable, file_names
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -15,7 +15,7 @@ class CheckOut extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: appbarBlue,
+        backgroundColor: appbarBlack,
         title: Text("Check Out"),
         actions: [ProductsAndPrice()],
       ),

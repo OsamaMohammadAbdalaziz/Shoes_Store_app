@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, must_be_immutable
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, must_be_immutable, file_names
 
 import 'package:flutter/material.dart';
 import 'package:shoes_store_app/Model/Item.dart';
@@ -23,7 +23,7 @@ class _DetailsState extends State<Details> {
         child: Scaffold(
       appBar: AppBar(
         actions: [ProductsAndPrice()],
-        backgroundColor: appbarBlue,
+        backgroundColor: appbarBlack,
         title: Text("Product details"),
       ),
       body: SingleChildScrollView(
