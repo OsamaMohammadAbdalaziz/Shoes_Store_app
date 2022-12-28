@@ -14,9 +14,9 @@ class Item {
 
 final List<Item> items = [
   Item(
-      name: "adidas",
+      name: "adidas Forum",
       imagepath: "assets/image/1.webp",
-      price: 150,
+      price: 185,
       location: "Outlet Store"),
   Item(
       name: "adidas NMD",
@@ -44,9 +44,9 @@ final List<Item> items = [
       price: 160,
       location: "Outlet Store"),
   Item(
-      name: "NIKE AIR MAX",
-      imagepath: "assets/image/7.webp",
-      price: 170,
+      name: "adidas Superstar",
+      imagepath: "assets/image/7.jpg",
+      price: 150,
       location: "Outlet Store"),
   Item(
       name: "NIKE Jordan",
@@ -57,7 +57,7 @@ final List<Item> items = [
       imagepath: "assets/image/9.webp",
       price: 230,
       location: "Outlet Store",
-      name: "Jordan Air"),
+      name: "Blue Vans"),
   Item(
       imagepath: "assets/image/10.webp",
       price: 215,
