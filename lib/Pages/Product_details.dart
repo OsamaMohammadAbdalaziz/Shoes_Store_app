@@ -7,7 +7,7 @@ import 'package:shoes_store_app/Shared/Colors.dart';
 
 class Details extends StatefulWidget {
   Item product;
-  Details({Key? key, required this.product}) :super(key: key);
+  Details({Key? key, required this.product}) : super(key: key);
 
   @override
   State<Details> createState() => _DetailsState();
@@ -32,6 +32,10 @@ class _DetailsState extends State<Details> {
             Image.asset(widget.product.imagepath),
             const SizedBox(
               height: 11,
+            ),
+            Text(
+              widget.product.name,
+              style: TextStyle(fontSize: 20),
             ),
             Text(
               "\$ ${widget.product.price}",
