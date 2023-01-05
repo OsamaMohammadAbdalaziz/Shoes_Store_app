@@ -51,7 +51,13 @@ class Register extends StatelessWidget {
                   height: 33,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: ((context) => const Login()),
+                        ));
+                  },
                   child: Text(
                     "Create Account",
                     style: TextStyle(fontSize: 19),
@@ -74,10 +80,10 @@ class Register extends StatelessWidget {
                     TextButton(
                         onPressed: () {
                           Navigator.pushReplacement(
-                            context, 
+                            context,
                             MaterialPageRoute(
-                              builder: (context) => const Login()),
-                            );
+                                builder: (context) => const Login()),
+                          );
                         },
                         child: Text("Sign in",
                             style:
